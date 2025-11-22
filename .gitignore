@@ -1,0 +1,15 @@
+# Windows
+Thumbs.db
+desktop.ini
+*.lnk
+
+# 备份文件
+*.bak
+*.backup
+*.tmp
+*~
+
+# 测试文件
+test-*.ps1
+test-*.bat
+debug-*.ps1
