@@ -27,6 +27,7 @@
 - ✅ **PowerShell UTF-8 配置**（永久生效）
 - ✅ **Git UTF-8 配置**（全局生效）
 - ✅ **系统级 UTF-8 支持**（可选，需重启）
+- ✅ **Python/Node.js 自动支持**（继承终端编码）
 - ✅ **零依赖**，纯 Windows 原生脚本
 - ✅ **开箱即用**，双击即可运行
 
@@ -83,6 +84,12 @@ Write-Host "你好世界 🚀"
 # Git 测试
 git log --oneline -3
 
+# Python 测试
+python -c "print('你好世界 🚀')"
+
+# Node.js 测试
+node -e "console.log('你好世界 🚀')"
+
 # 检查编码
 $OutputEncoding
 chcp
@@ -102,6 +109,10 @@ chcp
 
 **Q: 会影响其他程序吗？**
 - 不会，只修改终端和 Git 的编码设置
+
+**Q: Python/Node.js 会自动支持吗？**
+- 是的，它们会继承终端的 UTF-8 编码
+- 修复后，所有在终端运行的程序都支持中文
 
 **Q: 如何卸载？**
 - 删除 PowerShell 配置文件中的 UTF-8 配置
@@ -146,6 +157,6 @@ MIT License - 自由使用、修改和分发
 
 **⭐ 觉得有用？给个 Star 吧！**
 
-Made with ❤️ for Chinese Windows Users
+Made with ❤️ for ZH0531
 
 </div>
